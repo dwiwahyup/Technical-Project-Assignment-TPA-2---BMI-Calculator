@@ -7,21 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
 
 <body>
-    <div class="calculator">
-        <h1>Check Your BMI (Body Massa Index)</h1>
+    <div class="bmi">
+        <h1>Check Your BMI</h1>
         <p>Enter your height and weight bellow to check your BMI result</p>
-        <p>Put your height in here (CM)</p>
-        <input class="tinggi-badan" type="text">
-        <p>Put your weight in here (KG)</p>
-        <input class="berat-badan" type="text"><br>
-        <button class="hitung"> Calculate BMI</button>
+        <div class="calculator">
+            <label>Put your height in here (CM)</label>
+            <input class="tinggi-badan" type="text"><br>
+            <label>Put your weight in here (KG)</label>
+            <input class="berat-badan" type="text"><br>
+            <button class="hitung"> Calculate BMI</button>
+        </div>
+        <hr>
+        <div class="hasil-hitung">
+            <p>Your BMI is <strong class="hasil"></strong> which means You are <strong class="deskripsi"></strong> </p>
+        </div>
     </div>
-    <h3 class="hasil"></h3>
-    <p class="deskripsi"></p>
     <script src="script.js"></script>
 </body>
 
